@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ERP Integration Planning Guide | Mesam ERP</title>
+    <meta name="description" content="Plan ERP integrations across data ownership, mappings, timing, error handling, monitoring, security, auditability, testing, cutover, and support." />
+    <link rel="canonical" href="https://royalchariot.github.io/midwest-erp/erp-integration-planning-guide.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mesam ERP" />
+    <meta property="og:title" content="ERP Integration Planning Guide | Mesam ERP" />
+    <meta property="og:description" content="Plan ERP integrations across data ownership, mappings, timing, error handling, monitoring, security, auditability, testing, cutover, and support." />
+    <meta property="og:url" content="https://royalchariot.github.io/midwest-erp/erp-integration-planning-guide.html" />
+    <meta property="og:image" content="https://royalchariot.github.io/midwest-erp/assets/erp-advisory-hero.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/mesam-erp-logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-bar"><div class="top-bar-inner"><p>Independent ERP guidance for growing Midwest businesses and remote teams.</p><a href="contact.html">Book a consultation</a></div></div>
+    <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="Mesam ERP home"><img class="brand-logo" src="assets/mesam-erp-logo.svg" alt="Mesam ERP" /></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button><div class="nav-links" id="nav-links"><a href="services.html">Services</a><a href="platforms.html">Platforms</a><a href="industries.html">Industries</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="contact.html">Book ERP Assessment</a></div></nav></header>
+    <main>
+      <section class="page-hero page-integrations"><div class="page-hero-inner"><p class="hero-brand">Integration planning</p><h1>Design ERP Data Flows That Can Be Operated and Supported</h1><p>An interface is not complete when data moves once. It is complete when ownership, timing, validation, failure, recovery, monitoring, and audit evidence are understood.</p></div></section>
+      <section class="page-section"><div class="container article-layout">
+        <aside class="article-aside"><p class="eyebrow">Architecture checklist</p><h2>Make every data flow accountable.</h2><p>Document one owner for the business outcome and one owner for technical operation. Shared responsibility without escalation rules creates silent failures.</p><div class="article-meta"><span>Audience: finance, operations, IT</span><span>Use during: design through support</span><span>Output: integration control record</span></div><a class="button button-primary navy-button" href="contact.html">Review Integrations</a></aside>
+        <div class="content-stack">
+          <article class="resource-article"><span class="resource-number">01</span><h2>Define the business flow</h2><ul class="check-list"><li>Name the source of truth for each customer, vendor, item, price, order, payment, journal, and status.</li><li>Document the trigger, direction, frequency, expected volume, and timing requirement.</li><li>Map fields, values, transformations, defaults, and reference-data dependencies.</li><li>Explain the accounting, operational, reporting, and control impact.</li><li>Assign business and technical owners.</li></ul></article>
+          <article class="resource-article"><span class="resource-number">02</span><h2>Design for failure and recovery</h2><ul class="check-list"><li>Validate required fields, duplicates, totals, status, and referential integrity before posting.</li><li>Define retry behavior and prevent duplicate transactions.</li><li>Route rejected records to an actionable queue with clear error messages.</li><li>Set alert thresholds and escalation paths for delay, failure, and unexpected volume.</li><li>Retain enough detail to trace a transaction across systems.</li></ul></article>
+          <article class="resource-article"><span class="resource-number">03</span><h2>Secure and test the interface</h2><ul class="check-list"><li>Use least-privilege service accounts and controlled credential rotation.</li><li>Protect sensitive data in transit, at rest, in logs, and in support tools.</li><li>Test expected transactions, exceptions, duplicates, missing references, outages, and replay.</li><li>Reconcile counts and control totals between source and target.</li><li>Load-test realistic peak volumes and time-sensitive close processes.</li></ul></article>
+          <article class="resource-article"><span class="resource-number">04</span><h2>Prepare cutover and support</h2><ul class="check-list"><li>Sequence interface activation with migration, master-data ownership, and transaction freeze windows.</li><li>Define monitoring dashboards, daily checks, and month-end reconciliation.</li><li>Create runbooks for common failures and manual fallback.</li><li>Confirm who owns vendor tickets and cross-system diagnosis.</li><li>Review changes through an integration impact checklist.</li></ul><div class="resource-callout"><strong>Operational rule</strong><p>If finance or operations cannot see that an integration failed, explain what was affected, and identify who will resolve it, the integration is not production-ready.</p></div></article>
+        </div>
+      </div></section>
+    </main>
+    <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/mesam-erp-logo.svg" alt="Mesam ERP" /></a><p>ERP consulting for finance, operations, and growth.</p></div><div><h2>Services</h2><a href="erp-integrations.html">Integrations</a><a href="data-migration.html">Data Migration</a><a href="implementation-support.html">Implementation Support</a></div><div><h2>Resources</h2><a href="resources.html">ERP Planning Library</a><a href="data-migration-checklist.html">Migration Checklist</a><a href="erp-project-risk-guide.html">Project Risk Guide</a></div><div><h2>Company</h2><a href="about.html">About</a><a href="industries.html">Industries</a><a href="contact.html">Contact</a></div><div><h2>Contact</h2><a href="contact.html">Book ERP Assessment</a><a href="mailto:rakeshbandi491@gmail.com">rakeshbandi491@gmail.com</a></div></div><div class="container footer-bottom"><p>&copy; 2026 Mesam ERP. All rights reserved.</p><nav class="footer-legal-links" aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
