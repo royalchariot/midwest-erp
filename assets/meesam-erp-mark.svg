@@ -1,15 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title description">
-  <title id="title">Meesam ERP monogram</title>
-  <desc id="description">A gold angular M crossed by a precise rising slash on a dark background.</desc>
+  <title id="title">Meesam ERP partnership mark</title>
+  <desc id="description">Two people form an M and meet at a gold center point.</desc>
   <defs>
-    <linearGradient id="gold" x1="24" y1="18" x2="138" y2="142" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f4d282"/>
-      <stop offset="0.48" stop-color="#d6a643"/>
-      <stop offset="1" stop-color="#9b6516"/>
+    <linearGradient id="panel" x1="18" y1="12" x2="148" y2="154" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18545a"/>
+      <stop offset="1" stop-color="#0b3038"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="37" y1="49" x2="91" y2="123" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2ba897"/>
+      <stop offset="1" stop-color="#187f79"/>
     </linearGradient>
   </defs>
-  <rect width="160" height="160" rx="18" fill="#08121d"/>
-  <path d="M31 127V37l49 49 49-49v90" fill="none" stroke="url(#gold)" stroke-width="20" stroke-linejoin="miter"/>
-  <path d="M20 143 142 17" fill="none" stroke="#08121d" stroke-width="16" stroke-linecap="square"/>
-  <path d="M20 143 142 17" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="square"/>
+  <rect x="4" y="4" width="152" height="152" rx="30" fill="url(#panel)"/>
+  <circle cx="48" cy="43" r="12" fill="url(#teal)"/>
+  <circle cx="112" cy="43" r="12" fill="#ffffff"/>
+  <path d="M48 128V76c0-9 8-12 14-3 9 14 13 22 18 28" fill="none" stroke="url(#teal)" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M112 128V76c0-9-8-12-14-3-9 14-13 22-18 28" fill="none" stroke="#ffffff" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="102" r="7" fill="#e6ad38"/>
 </svg>
