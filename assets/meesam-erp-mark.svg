@@ -1,7 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title description">
   <title id="title">Meesam ERP monogram</title>
-  <desc id="description">An angular M crossed by a rising gold line.</desc>
-  <path d="M17 120V30h25l33 39 33-39h25v90h-27V72l-31 37-31-37v48Z" fill="#11263b"/>
-  <path d="M8 139 142 11" fill="none" stroke="#ffffff" stroke-width="17" stroke-linecap="square"/>
-  <path d="M8 139 142 11" fill="none" stroke="#c58b2b" stroke-width="7" stroke-linecap="square"/>
+  <desc id="description">A gold angular M crossed by a precise rising slash on a dark background.</desc>
+  <defs>
+    <linearGradient id="gold" x1="24" y1="18" x2="138" y2="142" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4d282"/>
+      <stop offset="0.48" stop-color="#d6a643"/>
+      <stop offset="1" stop-color="#9b6516"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="18" fill="#08121d"/>
+  <path d="M31 127V37l49 49 49-49v90" fill="none" stroke="url(#gold)" stroke-width="20" stroke-linejoin="miter"/>
+  <path d="M20 143 142 17" fill="none" stroke="#08121d" stroke-width="16" stroke-linecap="square"/>
+  <path d="M20 143 142 17" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="square"/>
 </svg>
