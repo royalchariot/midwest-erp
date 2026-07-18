@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" role="img" aria-labelledby="title description">
+  <title id="title">Meesam ERP</title>
+  <desc id="description">Meesam ERP logo with an angular M, rising gold line, and the tagline Systems Aligned. Business Accelerated.</desc>
+  <g transform="translate(10 5)">
+    <path d="M17 120V30h25l33 39 33-39h25v90h-27V72l-31 37-31-37v48Z" fill="#11263b"/>
+    <path d="M8 139 142 11" fill="none" stroke="#ffffff" stroke-width="17" stroke-linecap="square"/>
+    <path d="M8 139 142 11" fill="none" stroke="#c58b2b" stroke-width="7" stroke-linecap="square"/>
+  </g>
+  <text x="178" y="87" fill="#11263b" font-family="Manrope,Arial,sans-serif" font-size="54" font-weight="800">MEESAM</text>
+  <text x="430" y="87" fill="#a66e19" font-family="Manrope,Arial,sans-serif" font-size="54" font-weight="800">ERP</text>
+  <text x="181" y="116" fill="#526477" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">SYSTEMS ALIGNED. BUSINESS ACCELERATED.</text>
+</svg>
