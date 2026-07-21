@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://royalchariot.github.io/midwest-erp/sitemap.xml
+Sitemap: https://meesam.org/sitemap.xml

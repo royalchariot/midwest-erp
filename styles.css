@@ -1821,3 +1821,620 @@ li {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* 2026 Meesam premium finance-product skin */
+:root {
+  --navy: #041616;
+  --navy-2: #062426;
+  --steel: #008f72;
+  --steel-2: #00b889;
+  --gold: #d7aa3f;
+  --gold-dark: #8b6619;
+  --warm-white: #f8faf5;
+  --paper: #ffffff;
+  --white: #ffffff;
+  --charcoal: #142725;
+  --muted: #5e6f6a;
+  --border: #dce8e2;
+  --green: #00b889;
+  --teal-soft: #ecfff8;
+  --teal-mist: #f5fbf7;
+  --gold-soft: #fff8e4;
+  --shadow: 0 22px 55px rgba(4, 22, 22, 0.13);
+  --radius: 8px;
+  --header-height: 68px;
+}
+
+body {
+  background:
+    linear-gradient(180deg, #ffffff 0, #f8faf5 760px),
+    var(--warm-white);
+  color: var(--charcoal);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--navy);
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 940px;
+  color: var(--white);
+  font-size: clamp(3.4rem, 7vw, 6.8rem);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 4.1rem);
+  font-weight: 900;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+.top-bar {
+  background: var(--navy);
+}
+
+.top-bar-inner {
+  min-height: 34px;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.top-bar p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.top-bar a {
+  color: var(--steel-2);
+}
+
+.site-header {
+  min-height: var(--header-height);
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid rgba(220, 232, 226, 0.96);
+  backdrop-filter: blur(16px);
+}
+
+.nav {
+  min-height: var(--header-height);
+}
+
+.brand-logo {
+  width: min(190px, 48vw);
+  border-radius: var(--radius);
+}
+
+.nav-links {
+  gap: 12px;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.nav-links > a,
+.nav-item > a {
+  min-height: 38px;
+  padding: 8px 2px;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+}
+
+.nav-links a:hover,
+.nav-item:focus-within > a,
+.nav-links a[aria-current="page"]:not(.nav-cta) {
+  background: transparent;
+  border-color: var(--steel-2);
+  color: var(--steel);
+}
+
+.dropdown {
+  border-color: rgba(220, 232, 226, 0.94);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.dropdown a {
+  border-bottom: 0;
+  border-radius: var(--radius);
+}
+
+.nav-links .nav-cta {
+  border: 0;
+  border-radius: 999px;
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 12px 24px rgba(4, 22, 22, 0.16);
+}
+
+.nav-links .nav-cta:hover {
+  background: var(--steel);
+  color: var(--white);
+}
+
+.hero {
+  min-height: 700px;
+  background: var(--navy);
+}
+
+.hero-media {
+  background-image: url("assets/motion/home-flow.webp");
+  background-position: center;
+  background-size: cover;
+  transform: none;
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(4, 22, 22, 0.96) 0%, rgba(4, 22, 22, 0.78) 46%, rgba(4, 22, 22, 0.18) 100%),
+    linear-gradient(180deg, rgba(4, 22, 22, 0.08), rgba(4, 22, 22, 0.22));
+}
+
+.hero-inner {
+  padding: 88px 0;
+}
+
+.hero-brand {
+  border-left: 0;
+  padding-left: 0;
+  color: var(--steel-2);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.hero-lede,
+.hero-support {
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.hero-lede {
+  font-size: 21px;
+}
+
+.button {
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.button-primary {
+  background: var(--steel-2);
+  color: var(--navy);
+  box-shadow: 0 16px 34px rgba(0, 184, 137, 0.22);
+}
+
+.button-primary:hover {
+  background: #11cca0;
+}
+
+.button-secondary {
+  border-color: rgba(255, 255, 255, 0.46);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+}
+
+.navy-button {
+  background: var(--steel-2);
+  color: var(--navy);
+}
+
+.trust-bullets span {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.section-pad {
+  padding: 96px 0;
+}
+
+.eyebrow {
+  color: var(--steel);
+  font-weight: 900;
+}
+
+.problem-section,
+.services,
+.industries,
+.contact,
+.call-section,
+.principles,
+.page-section {
+  background: var(--white);
+}
+
+.clarity-section,
+.platforms,
+.offers,
+.about,
+.outcomes-section,
+.service-area,
+.resource-library,
+.page-section.alt {
+  background: var(--warm-white);
+}
+
+.problem-grid,
+.service-grid,
+.principle-grid,
+.platform-groups,
+.page-card-grid,
+.industry-grid,
+.offer-grid,
+.resource-list,
+.outcomes-grid,
+.resource-index {
+  gap: 16px;
+}
+
+.problem-grid article,
+.service-card,
+.check-panel,
+.platform-groups article,
+.industry-grid article,
+.offer-grid article,
+.principle-grid article,
+.resource-list a,
+.content-card,
+.contact-form,
+.page-card,
+.outcome-card,
+.response-card,
+.resource-article,
+.article-aside,
+.faq-list details {
+  border: 1px solid rgba(220, 232, 226, 0.92);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 16px 36px rgba(4, 22, 22, 0.06);
+}
+
+.service-card,
+.offer-grid article {
+  border-top: 0;
+}
+
+.service-card::before,
+.offer-grid article::before,
+.content-card::before,
+.page-card::before,
+.resource-article::before {
+  display: block;
+  width: 52px;
+  height: 3px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--steel-2), var(--gold));
+  content: "";
+}
+
+.icon-block,
+.visual-chip {
+  border-radius: var(--radius);
+  background: var(--navy);
+  color: var(--steel-2);
+}
+
+.check-list li::before,
+.service-card li::before,
+.deliverable-list li::before,
+.content-card li::before,
+.page-card li::before,
+.next-steps li::before {
+  background: var(--steel-2);
+}
+
+.service-card a,
+.offer-grid a,
+.resource-list strong,
+.contact-points span,
+.response-card strong,
+.resource-callout strong,
+.legal-section a,
+.form-privacy a {
+  color: var(--steel);
+}
+
+.proof-strip {
+  border: 0;
+  border-radius: 0;
+  background: var(--navy);
+}
+
+.proof-strip div {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.proof-strip strong {
+  color: var(--steel-2);
+}
+
+.proof-strip span {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.method,
+.resources,
+.final-cta {
+  background: var(--navy);
+}
+
+.timeline {
+  border-color: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.timeline li {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.timeline span,
+.resource-list span,
+.outcome-tag,
+.package-label,
+.resource-number,
+.badge-list span {
+  border-radius: 999px;
+  background: var(--teal-soft);
+  color: var(--steel);
+}
+
+.page-hero {
+  min-height: 520px;
+  border-bottom: 0;
+  background: var(--navy);
+  --motion-hero: url("assets/motion/home-flow.webp");
+}
+
+.page-hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(4, 22, 22, 0.96) 0%, rgba(4, 22, 22, 0.74) 48%, rgba(4, 22, 22, 0.16) 100%),
+    var(--motion-hero);
+  background-position: center center, center;
+  background-size: cover, cover;
+  transform: none;
+}
+
+.page-hero::after {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.page-hero-inner {
+  padding: 110px 0;
+}
+
+.page-hero h1 {
+  max-width: 960px;
+  font-size: clamp(3.1rem, 6.4vw, 6.1rem);
+}
+
+.page-hero p {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.page-hero .hero-brand {
+  color: var(--steel-2);
+}
+
+.page-services,
+.page-assessment,
+.page-selection,
+.page-integrations,
+.page-optimization {
+  --motion-hero: url("assets/motion/services-flow.webp");
+}
+
+.page-implementation,
+.page-migration {
+  --motion-hero: url("assets/motion/process-flow.webp");
+}
+
+.page-platforms,
+.page-netsuite,
+.page-dynamics {
+  --motion-hero: url("assets/motion/platforms-flow.webp");
+}
+
+.page-industries {
+  --motion-hero: url("assets/motion/about-flow.webp");
+}
+
+.page-resources {
+  --motion-hero: url("assets/motion/consultation-flow.webp");
+}
+
+.page-about {
+  --motion-hero: url("assets/motion/about-flow.webp");
+}
+
+.page-contact {
+  --motion-hero: url("assets/motion/contact-flow.webp");
+}
+
+.contact-section,
+.contact-layout {
+  background: var(--white);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  border-radius: var(--radius);
+  background: #fbfffd;
+}
+
+.final-cta {
+  padding: 88px 0;
+}
+
+.final-cta-inner {
+  border-left-color: var(--steel-2);
+}
+
+.footer {
+  background: var(--navy);
+}
+
+.footer .brand-logo {
+  width: min(245px, 70vw);
+  padding: 0.65rem;
+  background: var(--white);
+}
+
+.footer h2 {
+  color: var(--steel-2);
+}
+
+.footer p,
+.footer a {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer a:hover {
+  color: var(--steel-2);
+}
+
+.footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+.floating-consult {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: var(--navy);
+  box-shadow: var(--shadow);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.floating-consult::before {
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+  border-radius: 999px;
+  background: var(--steel-2);
+  box-shadow: 0 0 0 7px rgba(0, 184, 137, 0.16);
+  content: "";
+}
+
+@media (max-width: 1120px) {
+  h1 {
+    font-size: clamp(3rem, 7vw, 5.4rem);
+  }
+
+  .nav-links {
+    gap: 6px;
+  }
+
+  .brand-logo {
+    width: 168px;
+  }
+}
+
+@media (max-width: 880px) {
+  .nav-links > a,
+  .nav-item > a {
+    border-bottom: 0;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-inner,
+  .page-hero-inner {
+    width: min(100% - 40px, 1180px);
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    text-align: left;
+  }
+
+  .hero-lede,
+  .hero-support {
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  h1,
+  .page-hero h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.05rem;
+  }
+
+  .top-bar-inner {
+    min-height: 60px;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0;
+  }
+
+  .hero {
+    min-height: 690px;
+  }
+
+  .hero-overlay,
+  .page-hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(4, 22, 22, 0.96), rgba(4, 22, 22, 0.64)),
+      var(--motion-hero, url("assets/motion/home-flow.webp"));
+  }
+
+  .hero-inner {
+    padding: 74px 0;
+  }
+
+  .hero-lede {
+    font-size: 17px;
+  }
+
+  .hero-actions,
+  .button {
+    width: auto;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+  }
+
+  .page-hero {
+    min-height: 470px;
+  }
+
+  .page-hero-inner {
+    padding: 78px 0;
+  }
+
+  .floating-consult {
+    right: 16px;
+    bottom: 16px;
+    width: 54px;
+    min-height: 54px;
+    overflow: hidden;
+    padding: 0;
+    color: transparent;
+  }
+
+  .floating-consult::before {
+    margin: 0 auto;
+  }
+}
