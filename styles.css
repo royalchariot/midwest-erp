@@ -2576,3 +2576,445 @@ h3 {
     padding: 14px;
   }
 }
+
+/* Final compact pass: reduce oversized hero, section, card, and assistant proportions. */
+:root {
+  --shadow: 0 16px 38px rgba(4, 22, 22, 0.1);
+  --header-height: 64px;
+}
+
+body {
+  font-size: 15.5px;
+  line-height: 1.58;
+}
+
+h1 {
+  max-width: 820px;
+  font-size: clamp(2.55rem, 4.5vw, 4.4rem);
+  line-height: 0.98;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 2.35vw, 2.75rem);
+  line-height: 1.04;
+}
+
+.brand-logo {
+  width: min(172px, 46vw);
+}
+
+.nav-links {
+  gap: 8px;
+  font-size: 13px;
+}
+
+.nav-links > a,
+.nav-item > a {
+  min-height: 34px;
+  padding: 7px 1px;
+}
+
+.nav-links .nav-cta {
+  padding: 8px 14px;
+}
+
+.hero {
+  min-height: min(560px, calc(100svh - 130px));
+}
+
+.hero-inner {
+  padding: 50px 0 56px;
+}
+
+.hero-brand {
+  font-size: 15px;
+}
+
+.hero-lede {
+  max-width: 620px;
+  font-size: 16.5px;
+}
+
+.hero-support {
+  max-width: 600px;
+  font-size: 14.5px;
+}
+
+.button {
+  min-height: 46px;
+  padding: 12px 18px;
+  font-size: 14px;
+}
+
+.trust-bullets {
+  gap: 8px;
+}
+
+.trust-bullets span {
+  min-height: 31px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.section-pad {
+  padding: 62px 0;
+}
+
+.page-section {
+  padding: 54px 0;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-heading p:not(.eyebrow) {
+  max-width: 700px;
+  font-size: 16px;
+}
+
+.split,
+.contact-layout,
+.service-area-inner,
+.article-layout {
+  gap: 38px;
+}
+
+.problem-grid,
+.service-grid,
+.principle-grid,
+.platform-groups,
+.page-card-grid,
+.industry-grid,
+.offer-grid,
+.resource-list,
+.outcomes-grid,
+.resource-index {
+  gap: 18px;
+}
+
+.problem-grid article,
+.principle-grid article,
+.content-card,
+.page-card,
+.outcome-card,
+.resource-article,
+.check-panel,
+.platform-groups article,
+.industry-grid article,
+.offer-grid article,
+.resource-list a,
+.response-card,
+.article-aside,
+.faq-list details {
+  padding: 20px;
+  box-shadow: 0 10px 28px rgba(4, 22, 22, 0.055);
+}
+
+.service-card {
+  min-height: 0;
+  padding: 22px;
+}
+
+.service-card::before,
+.offer-grid article::before,
+.content-card::before,
+.page-card::before,
+.resource-article::before {
+  width: 42px;
+  height: 2px;
+  margin-bottom: 15px;
+}
+
+.icon-block {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 16px;
+}
+
+.service-card ul,
+.check-list,
+.content-card ul,
+.page-card ul,
+.next-steps {
+  gap: 8px;
+}
+
+.service-card ul {
+  margin: 14px 0 18px;
+  font-size: 13px;
+}
+
+.proof-strip div {
+  min-height: 94px;
+  padding: 18px;
+}
+
+.proof-strip strong {
+  font-size: 16px;
+}
+
+.timeline li {
+  min-height: 205px;
+  padding: 18px;
+}
+
+.page-hero {
+  min-height: 220px;
+}
+
+.page-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(320px, 0.48fr);
+  align-items: end;
+  gap: 8px 48px;
+  padding: 32px 0 34px;
+}
+
+.page-hero h1 {
+  max-width: 720px;
+  font-size: clamp(1.9rem, 2.9vw, 3rem);
+  line-height: 1.04;
+}
+
+.page-hero p {
+  max-width: 640px;
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.page-hero .hero-brand {
+  grid-column: 1;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.page-hero h1 {
+  grid-column: 1;
+}
+
+.page-hero h1 + p {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+  max-width: 500px;
+  margin: 0 0 4px;
+}
+
+.page-hero + .section-pad,
+.page-hero + .page-section {
+  padding-top: 46px;
+}
+
+.final-cta {
+  padding: 56px 0;
+}
+
+.final-cta-inner {
+  gap: 24px;
+  padding-left: 22px;
+}
+
+.contact-layout > div > p:not(.eyebrow) {
+  max-width: 540px;
+  font-size: 16px;
+}
+
+.contact-points {
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.contact-points span {
+  min-height: 32px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.contact-confidence {
+  margin-top: 24px;
+}
+
+.contact-form {
+  gap: 14px;
+  padding: 22px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  min-height: 42px;
+  padding: 9px 11px;
+}
+
+.contact-form textarea {
+  min-height: 108px;
+}
+
+.resource-list a,
+.resource-index a {
+  min-height: 180px;
+}
+
+.footer {
+  padding: 42px 0 24px;
+}
+
+.footer .brand-logo {
+  width: min(210px, 66vw);
+}
+
+.floating-assistant {
+  right: 16px;
+  bottom: 16px;
+}
+
+.assistant-button {
+  min-height: 48px;
+  padding: 0 15px;
+  font-size: 13px;
+}
+
+.assistant-status {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 0 6px rgba(0, 184, 137, 0.14);
+}
+
+.assistant-panel {
+  bottom: 62px;
+  width: min(340px, calc(100vw - 32px));
+  padding: 15px;
+}
+
+.assistant-panel h2 {
+  font-size: 18px;
+}
+
+.assistant-panel details {
+  padding: 10px;
+}
+
+@media (max-width: 1120px) {
+  h1 {
+    font-size: clamp(2.55rem, 5.2vw, 4.2rem);
+  }
+}
+
+@media (max-width: 880px) {
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero-inner,
+  .page-hero-inner {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .section-pad,
+  .page-section {
+    padding: 52px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1,
+  .page-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  .top-bar-inner {
+    min-height: 32px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 6px 0;
+  }
+
+  .top-bar p {
+    display: none;
+  }
+
+  .hero {
+    min-height: 490px;
+  }
+
+  .hero-inner {
+    padding: 42px 0 48px;
+  }
+
+  .hero-lede {
+    font-size: 16px;
+  }
+
+  .page-hero {
+    min-height: 205px;
+  }
+
+  .page-hero-inner {
+    display: block;
+    padding: 26px 0 28px;
+  }
+
+  .page-hero .hero-brand {
+    margin-bottom: 8px;
+  }
+
+  .page-hero h1 {
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+
+  .page-hero p {
+    font-size: 14px;
+  }
+
+  .page-hero h1 + p {
+    max-width: 100%;
+    margin-top: 8px;
+  }
+
+  .page-hero + .section-pad,
+  .page-hero + .page-section {
+    padding-top: 38px;
+  }
+
+  .problem-grid article,
+  .principle-grid article,
+  .content-card,
+  .page-card,
+  .outcome-card,
+  .resource-article,
+  .check-panel,
+  .platform-groups article,
+  .industry-grid article,
+  .offer-grid article,
+  .resource-list a,
+  .response-card,
+  .article-aside,
+  .faq-list details,
+  .service-card,
+  .contact-form {
+    padding: 18px;
+  }
+
+  .assistant-button {
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+  }
+
+  .assistant-panel {
+    bottom: 62px;
+    width: min(330px, calc(100vw - 32px));
+    max-height: min(64vh, 520px);
+  }
+}
