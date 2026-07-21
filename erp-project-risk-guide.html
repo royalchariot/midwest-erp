@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260721-1" />
+    <link rel="stylesheet" href="styles.css?v=20260721-2" />
   </head>
   <body>
     <div class="top-bar"><div class="top-bar-inner"><p>Independent ERP guidance for growing Midwest businesses and remote teams.</p><a href="contact.html">Book a consultation</a></div></div>
@@ -36,6 +36,36 @@
     </main>
     <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/meesam-erp-logo.svg?v=20260718-1" alt="Meesam ERP" /></a><p>Systems Aligned. Business Accelerated.</p></div><div><h2>Services</h2><a href="erp-assessment.html">ERP Assessment</a><a href="erp-selection.html">ERP Selection</a><a href="implementation-support.html">Implementation Support</a></div><div><h2>Resources</h2><a href="resources.html">ERP Planning Library</a><a href="erp-selection-checklist.html">Selection Checklist</a><a href="data-migration-checklist.html">Migration Checklist</a></div><div><h2>Company</h2><a href="about.html">About</a><a href="industries.html">Industries</a><a href="contact.html">Contact</a></div><div><h2>Contact</h2><a href="contact.html">Book ERP Assessment</a><a href="mailto:rakeshbandi491@gmail.com">rakeshbandi491@gmail.com</a></div></div><div class="container footer-bottom"><p>&copy; 2026 Meesam ERP. All rights reserved.</p><nav class="footer-legal-links" aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
     <script src="script.js"></script>
-    <a class="floating-consult" href="/contact.html" aria-label="Ask Meesam about ERP consulting">Ask Meesam</a>
+    <div class="floating-assistant" aria-label="Meesam quick answers">
+      <input class="assistant-toggle" id="meesam-assistant-toggle" type="checkbox" />
+      <label class="assistant-button" for="meesam-assistant-toggle" aria-label="Open Meesam quick answers">
+        <span class="assistant-status" aria-hidden="true"></span>
+        <span class="assistant-button-text">Ask Meesam</span>
+      </label>
+      <section class="assistant-panel" aria-labelledby="meesam-assistant-title">
+        <div class="assistant-panel-head">
+          <p>Meesam Assistant</p>
+          <label for="meesam-assistant-toggle" aria-label="Close Meesam quick answers">X</label>
+        </div>
+        <h2 id="meesam-assistant-title">Quick ERP Answers</h2>
+        <details open>
+          <summary>What does Meesam ERP do?</summary>
+          <p>Meesam helps companies assess ERP readiness, select the right platform, support implementations, migrate data, connect systems, and improve reporting after go-live.</p>
+        </details>
+        <details>
+          <summary>Which ERP platforms are supported?</summary>
+          <p>Core advisory covers NetSuite, Microsoft Dynamics 365, Sage Intacct, Acumatica, Odoo, QuickBooks transitions, and connected finance operations tools.</p>
+        </details>
+        <details>
+          <summary>When should we contact Meesam?</summary>
+          <p>Reach out before selection, during a stalled implementation, ahead of data migration, when integrations are disconnected, or when reporting is slowing decisions.</p>
+        </details>
+        <details>
+          <summary>How fast is the first response?</summary>
+          <p>Consultation requests are reviewed within one business day, with the first call focused on scope, risks, timeline, and the best next decision.</p>
+        </details>
+        <a class="assistant-cta" href="/contact.html">Book ERP Assessment</a>
+      </section>
+    </div>
   </body>
 </html>

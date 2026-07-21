@@ -10,13 +10,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles.css?v=20260721-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260721-2" />
   </head>
   <body>
     <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/" aria-label="Meesam ERP home"><img class="brand-logo" src="/assets/meesam-erp-logo.svg?v=20260718-1" alt="Meesam ERP" /></a><div class="nav-links"><a href="/services.html">Services</a><a href="/resources.html">Resources</a><a href="/contact.html">Contact</a></div></nav></header>
     <main><section class="page-hero page-contact"><div class="page-hero-inner"><p class="hero-brand">404</p><h1>This page could not be found.</h1><p>The link may have changed or the page may no longer exist. Continue to the Meesam ERP homepage or browse the planning library.</p><div class="hero-actions"><a class="button button-primary" href="/">Go to Homepage</a><a class="button button-secondary" href="/resources.html">Browse Resources</a></div></div></section></main>
     <footer class="footer"><div class="container footer-bottom"><p>&copy; 2026 Meesam ERP. All rights reserved.</p><nav class="footer-legal-links" aria-label="Legal"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer>
     <script src="/script.js"></script>
-    <a class="floating-consult" href="/contact.html" aria-label="Ask Meesam about ERP consulting">Ask Meesam</a>
+    <div class="floating-assistant" aria-label="Meesam quick answers">
+      <input class="assistant-toggle" id="meesam-assistant-toggle" type="checkbox" />
+      <label class="assistant-button" for="meesam-assistant-toggle" aria-label="Open Meesam quick answers">
+        <span class="assistant-status" aria-hidden="true"></span>
+        <span class="assistant-button-text">Ask Meesam</span>
+      </label>
+      <section class="assistant-panel" aria-labelledby="meesam-assistant-title">
+        <div class="assistant-panel-head">
+          <p>Meesam Assistant</p>
+          <label for="meesam-assistant-toggle" aria-label="Close Meesam quick answers">X</label>
+        </div>
+        <h2 id="meesam-assistant-title">Quick ERP Answers</h2>
+        <details open>
+          <summary>What does Meesam ERP do?</summary>
+          <p>Meesam helps companies assess ERP readiness, select the right platform, support implementations, migrate data, connect systems, and improve reporting after go-live.</p>
+        </details>
+        <details>
+          <summary>Which ERP platforms are supported?</summary>
+          <p>Core advisory covers NetSuite, Microsoft Dynamics 365, Sage Intacct, Acumatica, Odoo, QuickBooks transitions, and connected finance operations tools.</p>
+        </details>
+        <details>
+          <summary>When should we contact Meesam?</summary>
+          <p>Reach out before selection, during a stalled implementation, ahead of data migration, when integrations are disconnected, or when reporting is slowing decisions.</p>
+        </details>
+        <details>
+          <summary>How fast is the first response?</summary>
+          <p>Consultation requests are reviewed within one business day, with the first call focused on scope, risks, timeline, and the best next decision.</p>
+        </details>
+        <a class="assistant-cta" href="/contact.html">Book ERP Assessment</a>
+      </section>
+    </div>
   </body>
 </html>
