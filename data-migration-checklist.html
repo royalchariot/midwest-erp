@@ -1,71 +1,15 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ERP Data Migration Checklist | Maitero ERP</title>
-    <meta name="description" content="An ERP data migration checklist for source inventory, ownership, cleanup, mapping, test loads, reconciliation, cutover, and post-go-live validation." />
-    <link rel="canonical" href="https://maitero.com/data-migration-checklist.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Maitero ERP" />
-    <meta property="og:title" content="ERP Data Migration Checklist | Maitero ERP" />
-    <meta property="og:description" content="An ERP data migration checklist for source inventory, ownership, cleanup, mapping, test loads, reconciliation, cutover, and post-go-live validation." />
-    <meta property="og:url" content="https://maitero.com/data-migration-checklist.html" />
-    <meta property="og:image" content="https://maitero.com/assets/erp-advisory-hero.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="assets/maitero-erp-mark.png?v=20260722-2" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260722-2" />
-  </head>
-  <body>
-    <div class="top-bar"><div class="top-bar-inner"><p>Independent ERP guidance for growing Midwest businesses and remote teams.</p><a href="contact.html">Book a consultation</a></div></div>
-    <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="Maitero ERP home"><img class="brand-logo" src="assets/maitero-erp-logo.png?v=20260722-2" alt="Maitero ERP" /></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button><div class="nav-links" id="nav-links"><a href="services.html">Services</a><a href="platforms.html">Platforms</a><a href="industries.html">Industries</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="contact.html">Book ERP Assessment</a></div></nav></header>
-    <main>
-      <section class="page-hero page-migration"><div class="page-hero-inner"><p class="hero-brand">Migration checklist</p><h1>Control ERP Data Before It Controls Go-Live</h1><p>Use this checklist to turn migration into a governed business workstream with named owners, repeatable test cycles, and documented reconciliation.</p></div></section>
-      <section class="page-section"><div class="container article-layout">
-        <aside class="article-aside"><p class="eyebrow">Migration governance</p><h2>Business owners approve the meaning of data.</h2><p>Technical teams can extract and load records, but finance and operations must approve transformation rules and reconciliation.</p><div class="article-meta"><span>Audience: controller, operations, data lead</span><span>Use during: design through cutover</span><span>Output: reconciled migration package</span></div><a class="button button-primary navy-button" href="contact.html">Plan Data Migration</a></aside>
-        <div class="content-stack">
-          <article class="resource-article"><span class="resource-number">Phase 1</span><h2>Inventory and scope</h2><ul class="check-list"><li>List every source system, spreadsheet, archive, and manual record used by the business.</li><li>Decide which master data, open transactions, balances, and history will move.</li><li>Name a business owner and technical owner for every data object.</li><li>Document retention, audit, privacy, and access requirements.</li><li>Identify dependencies between customers, vendors, items, accounts, projects, orders, inventory, and balances.</li></ul></article>
-          <article class="resource-article"><span class="resource-number">Phase 2</span><h2>Clean, map, and transform</h2><ul class="check-list"><li>Profile duplicates, missing fields, invalid values, inactive records, and inconsistent codes.</li><li>Define the target value, default, transformation, and exception rule for each field.</li><li>Approve chart-of-accounts, dimensions, units, statuses, payment terms, and ownership changes.</li><li>Maintain a decision log for mapping rules that affect reporting or controls.</li><li>Prevent cleanup from changing source records without traceable approval.</li></ul></article>
-          <article class="resource-article"><span class="resource-number">Phase 3</span><h2>Test loads and reconciliation</h2><ul class="check-list"><li>Run multiple complete test cycles using the repeatable cutover process.</li><li>Validate record counts, control totals, subledger-to-ledger ties, aging, inventory, open orders, and key reports.</li><li>Test referential integrity and end-to-end transactions that depend on migrated records.</li><li>Track defects by root cause: source, mapping, transformation, load, configuration, or validation.</li><li>Require business signoff on acceptance criteria, not only a successful technical load.</li></ul></article>
-          <article class="resource-article"><span class="resource-number">Phase 4</span><h2>Cutover and stabilization</h2><ul class="check-list"><li>Freeze changes at an agreed time and communicate what users can and cannot do.</li><li>Sequence extraction, transformation, load, reconciliation, approval, and release tasks.</li><li>Define fallback actions and the latest safe point for a go/no-go decision.</li><li>Retain migration files, approvals, reconciliation evidence, and issue records.</li><li>Monitor master data and transaction quality closely after go-live.</li></ul><div class="resource-callout"><strong>Acceptance rule</strong><p>Migration is complete when business owners can reconcile the new ERP to approved sources and explain every material difference.</p></div></article>
-        </div>
-      </div></section>
-    </main>
-    <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/maitero-erp-logo.png?v=20260722-2" alt="Maitero ERP" /></a><p>Systems Aligned. Business Accelerated.</p></div><div><h2>Services</h2><a href="data-migration.html">Data Migration</a><a href="implementation-support.html">Implementation Support</a><a href="erp-integrations.html">Integrations</a></div><div><h2>Resources</h2><a href="resources.html">ERP Planning Library</a><a href="erp-selection-checklist.html">Selection Checklist</a><a href="erp-project-risk-guide.html">Project Risk Guide</a></div><div><h2>Company</h2><a href="about.html">About</a><a href="industries.html">Industries</a><a href="contact.html">Contact</a></div><div><h2>Contact</h2><a href="contact.html">Book ERP Assessment</a><a href="mailto:rakeshbandi491@gmail.com">rakeshbandi491@gmail.com</a></div></div><div class="container footer-bottom"><p>&copy; 2026 Maitero ERP. All rights reserved.</p><nav class="footer-legal-links" aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
-    <script src="script.js"></script>
-    <div class="floating-assistant" aria-label="Maitero quick answers">
-      <input class="assistant-toggle" id="maitero-assistant-toggle" type="checkbox" />
-      <label class="assistant-button" for="maitero-assistant-toggle" aria-label="Open Maitero quick answers">
-        <span class="assistant-status" aria-hidden="true"></span>
-        <span class="assistant-button-text">Ask Maitero</span>
-      </label>
-      <section class="assistant-panel" aria-labelledby="maitero-assistant-title">
-        <div class="assistant-panel-head">
-          <p>Maitero Assistant</p>
-          <label for="maitero-assistant-toggle" aria-label="Close Maitero quick answers">X</label>
-        </div>
-        <h2 id="maitero-assistant-title">Quick ERP Answers</h2>
-        <details open>
-          <summary>What does Maitero ERP do?</summary>
-          <p>Maitero helps companies assess ERP readiness, select the right platform, support implementations, migrate data, connect systems, and improve reporting after go-live.</p>
-        </details>
-        <details>
-          <summary>Which ERP platforms are supported?</summary>
-          <p>Core advisory covers NetSuite, Microsoft Dynamics 365, Sage Intacct, Acumatica, Odoo, QuickBooks transitions, and connected finance operations tools.</p>
-        </details>
-        <details>
-          <summary>When should we contact Maitero?</summary>
-          <p>Reach out before selection, during a stalled implementation, ahead of data migration, when integrations are disconnected, or when reporting is slowing decisions.</p>
-        </details>
-        <details>
-          <summary>How fast is the first response?</summary>
-          <p>Consultation requests are reviewed within one business day, with the first call focused on scope, risks, timeline, and the best next decision.</p>
-        </details>
-        <a class="assistant-cta" href="/contact.html">Book ERP Assessment</a>
-      </section>
-    </div>
-  </body>
-</html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="refresh" content="0; url=/services/data-migration/" />
+        <link rel="canonical" href="https://maitero.com/services/data-migration/" />
+        <title>Data Migration Checklist moved | Maitero ERP</title>
+        <link rel="icon" href="/assets/maitero-erp-mark.png?v=20260722-2" type="image/png" />
+        <link rel="stylesheet" href="/styles.css?v=20260722-3" />
+      </head>
+      <body>
+        <main class="alias-page"><a class="brand" href="/"><img class="brand-logo" src="/assets/maitero-erp-logo.png?v=20260722-2" alt="Maitero ERP" /></a><h1>Data Migration Checklist moved.</h1><p>This page now lives at <a href="/services/data-migration/">/services/data-migration/</a>.</p></main>
+      </body>
+    </html>
