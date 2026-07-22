@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://meesam.org/sitemap.xml
+Sitemap: https://maitero.com/sitemap.xml
