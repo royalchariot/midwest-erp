@@ -2600,7 +2600,9 @@ h2 {
 }
 
 .brand-logo {
-  width: min(172px, 46vw);
+  width: min(154px, 44vw);
+  max-height: 48px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -2863,6 +2865,7 @@ h2 {
 
 .footer .brand-logo {
   width: min(210px, 66vw);
+  max-height: none;
 }
 
 .floating-assistant {
